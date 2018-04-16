@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3231;
 
 const SocketManager = require('./SocketManager')
 
-app.use(express.static(__dirname + 'build'))
+app.use(express.static(__dirname + '/public'))
 
 io.on('connection', SocketManager)
 
