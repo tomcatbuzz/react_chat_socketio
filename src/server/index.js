@@ -15,6 +15,6 @@ app.use(express.static(__dirname + '/../../build'))
 
 io.on('connection', SocketManager)
 
-server.listen(port, () => {
+server.listen(PORT, () => {
   console.log("Connected to port:" + PORT);
 });
